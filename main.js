@@ -59,7 +59,7 @@ function signup() {
         name: username
     };
 
-    fetch('http://localhost:3000/signup', {
+    fetch('https://gauth-rhdy.onrender.com/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -115,7 +115,7 @@ function signin() {
         return;
     }
 
-    fetch('http://localhost:3000/signin', {
+    fetch('https://gauth-rhdy.onrender.com/signin', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -154,7 +154,7 @@ function resetPassword() {
         token: resetToken
     };
 
-    fetch('http://localhost:3000/reset-password', {
+    fetch('https://gauth-rhdy.onrender.com/reset-password', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
